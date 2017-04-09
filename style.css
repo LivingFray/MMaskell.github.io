@@ -15,12 +15,13 @@ td {
 
 #playerName {
 	font-weight:bold;
+	font-size: x-large;
 }
 
 #nameAdder {
 	background-color:#0088FF;
-	width: 50%;
-	left: 25%;
+	width: 100%;
+	left: 0%;
 	bottom: 5%;
 	position:absolute;
 	padding: 1ex;
@@ -31,9 +32,18 @@ td {
 	display:block;
 	margin: 0 auto;
 	width: 90%;
+	font-size: 5vw;
 	text-align:center;
 }
 #nameAdderButtons {
 	display:inline-block;
 	margin: auto;
+}
+
+#addPlayer {
+	font-size: 5vw;
+}
+
+#startGame {
+	font-size: 5vw;
 }

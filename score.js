@@ -32,23 +32,24 @@ newRow = function(r){
 onload = function(){
 	table = document.getElementById("scores");
 	playerRow = table.insertRow(0);
-	playerRow.insertCell(0);
 }
 
 addPlayer = function(){
 	var name = document.getElementById("newName").value;
 	document.getElementById("newName").value = "";
 	if(name!==""){
-		var cell = playerRow.insertCell(playerRow.cells.length-1);
+		var cell = playerRow.insertCell(playerRow.cells.length);
 		cell.innerHTML = name;
 		cell.id = "playerName"
+	}
+	for(var i=0;i<playerRow.cells.length;i++){
+		playerRow.cells[i].style.width = (document.body.clientWidth / playerRow.cells.length) + "px";
 	}
 }
 
 startGame = function(){
 	addPlayer();
 	if(playerRow.cells.length>2){
-		playerRow.deleteCell(playerRow.cells.length-1);
 		var row = table.insertRow(table.rows.length);
 		for(var i=0; i<playerRow.cells.length;i++){
 			var cell = row.insertCell(0);
