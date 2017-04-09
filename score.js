@@ -49,7 +49,7 @@ addPlayer = function(){
 
 startGame = function(){
 	addPlayer();
-	if(playerRow.cells.length>2){
+	if(playerRow.cells.length>=2){
 		var row = table.insertRow(table.rows.length);
 		for(var i=0; i<playerRow.cells.length;i++){
 			var cell = row.insertCell(0);

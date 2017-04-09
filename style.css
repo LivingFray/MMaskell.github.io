@@ -11,11 +11,17 @@ body {
 td {
 	min-width: 5em;
 	height: 2ex;
+	font-size: x-large;
+}
+
+input {
+	font-size: x-large;
+	width:100%;
+	border:0px;
 }
 
 #playerName {
 	font-weight:bold;
-	font-size: x-large;
 }
 
 #nameAdder {
